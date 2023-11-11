@@ -25,7 +25,7 @@ body{
 
 .messi{
     width: 100%;
-    padding: 30px;
+    padding: 0px;
 }
 
 .barra {
@@ -33,7 +33,16 @@ body{
     display: inline-block;
     margin-right: 20px; 
 }
+.barra:hover{
+    background-color: green;
+}
 
+.barra_opciones {
+    color: #ff0000;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+}
 
 .logo_container{
     background-color: skyblue;
@@ -67,7 +76,7 @@ h1{
 
 #bienvenido{
     font-family:"Malberg";
-    color:black;
+    color:gray;
 }
 
 h3{
@@ -85,7 +94,7 @@ h3{
 
 h2{
     text-decoration: underline;
-    color:coral;
+    color:darkgreen;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -126,6 +135,7 @@ th, td {
 
 .equipos_titulo{
     color:blue;
+    font-weight: bold;
 }
 
 .tit, .foto_fecha{
@@ -163,16 +173,24 @@ th, td {
     margin: 20px;
 }
 
+.fixture_detalle {
+    font-size: 16px;
+    font-family: "Arial", sans-serif; 
+    color:#4745bb;
+    font-weight: bold;
+}
+
 
 .contacto {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 50% 50%; 
     gap: 10px; 
     align-items: center; 
 }
 
 .contacto_imagen {
     grid-column: 1 / 2;
+    
 }
 
 .contacto_imagen img {
